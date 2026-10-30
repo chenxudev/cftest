@@ -1,0 +1,14 @@
+name = "cftest"
+main = "src/entry.py"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["python_workers"]
+
+[assets]
+directory = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cftest-db"
+# Replace this with the ID printed by `npx wrangler d1 create cftest-db`.
+database_id = "39c4430a-0766-499c-8822-0cddaa5bd112"
+migrations_dir = "migrations"
